@@ -1,0 +1,124 @@
+main {
+  background: rgba(65, 53, 134, 0.806);
+  align-items: left;
+  width: 85%;
+  margin: 0 auto 30px;
+  border: 3px solid rgba(96, 227, 227, 0.719);
+  
+  h2 {
+    color: rgb(96, 227, 227);
+  }
+  
+  h4 {
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(128, 166, 0, 0.6);
+  }
+
+  .section1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    border-top: 1px solid $grey;
+
+    @media screen and (max-width: 743px) {
+      grid-template-columns: 1fr;
+      
+    }
+
+    .left-part {
+      
+      
+
+      img {
+        border: 2px solid rgb(96, 227, 227);
+        width: 90%;
+        height: 25%;
+        margin: 25px auto;
+       
+        
+      }
+    }
+    .right-part {
+      border: 3px solid rgb(96, 227, 227);
+      margin: 5%;
+      
+      p {
+        
+        width: 90%;
+        height: 25%; 
+        margin: 25px auto;
+        letter-spacing: 2px;
+        color: $color1;
+        text-align: left; 
+        
+        @media screen and (max-width: 900px) {
+          font-size: 0.8rem;
+        }
+        
+      }
+    }
+  }
+  
+  .section2 {
+    margin: 25px auto;
+    padding: 25px auto;
+    
+    video {
+      border: 2px solid rgb(96, 227, 227);
+      aspect-ratio: 16/9;
+      width: 90%;
+      height: auto;
+      max-height: 350%;
+    }
+  }
+
+  .bubble {
+    position: absolute;
+    border-radius: 300px;
+    background: rgba(255, 166, 0, 0.6);
+    opacity: 0;
+    animation: anim 8s forwards;
+    filter: hue-rotate(0deg);
+  }
+  
+  @keyframes anim {
+    to  {
+      top: -250px;
+      left: var(--left);
+      opacity: 1;
+      filter: hue-rotate(720deg);
+    }
+  }
+  
+  .section3 {
+    margin: 25px auto;
+    
+    
+    h3 {
+      color: rgb(96, 227, 227);
+      border: 2px solid  rgba(233, 215, 76, 0.6);
+      border-left: none;
+      border-right: none;
+    }
+    p {
+      
+      border: 2px solid rgb(96, 227, 227);
+      width: 90%;
+      margin: 25px auto;
+      letter-spacing: 2px;
+      color: $color1;
+      text-align: left; 
+      padding: 25px;
+    }
+
+    video {
+      border: 2px solid rgb(96, 227, 227);
+      aspect-ratio: 16/9;
+      width: 90%;
+      height: auto;
+      max-height: 350%;
+    }
+  }
+}

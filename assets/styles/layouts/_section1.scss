@@ -1,0 +1,38 @@
+section1 {
+  
+  .box {
+    color: $color1;
+    border: 2px solid rgb(96, 227, 227);
+    background: $black;
+    padding: 45px; 
+    margin: 7.5%;
+    font-size: 1.5rem;
+    transition: 0.25s ease;
+  }
+  p span {
+    visibility: hidden;
+    width: 240px;
+    margin: 10px auto 0;
+    color: $white;
+  }
+  button {
+    margin: 15px;
+    padding: 15px;
+    margin-top: 35px;
+    height: 7vh;
+    width: 10%;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: $font3;
+  }
+  .question-clicked {
+    border: 2px dash rgb(214, 96, 227);
+    background:  rgba(214, 96, 227, 0.728);
+    border-radius: 150px;
+    color: $white;
+  
+    button {
+      border-radius: 150px;
+    }
+  }
+}

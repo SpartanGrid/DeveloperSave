@@ -1,0 +1,20 @@
+section1 {
+  color: $color1;
+  width: 85%;
+  margin: 0 auto 30px;
+  
+  .box {
+    border: 2px solid rgb(96, 227, 227);
+    background: rgba(65, 53, 134, 0.806);
+    padding: 45px; 
+    margin: 7.5%;
+    font-size: 1.5rem;
+  }
+  p {
+    visibility: hidden;
+    width: 240px;
+  }
+  // .btn-1, btn-2 {
+  //   padding-top: -100px;
+  // }
+}
