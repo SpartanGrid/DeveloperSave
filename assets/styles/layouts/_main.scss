@@ -2,102 +2,107 @@ main {
   width: 85%;
   margin: 0 auto 30px;
 
-  img {
-    width: 100%;
-  }
   span {
     color: rgb(96, 227, 227);
     border: 2px solid rgba(255, 0, 0, 0.61);
     height: 7vh;
     display: grid;
     align-items: center;
-    margin: 55px;
+    margin: 25px auto;
+    width: 100%;
+    font-size: 1.7rem;
   }
   .section1 {
-    min-height: 640px;
-    width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 50% 50%;
     background: rgba(65, 53, 134, 0.806);
-    padding: 60px 40px;
+    margin: 25px auto;
+    width: 100%;
+    padding: 25px;
 
     @media screen and (max-width: 900px) {
       grid-template-columns: 1fr;
-      min-height: 990px;
-      width: 100%;
-      padding: 60px 25px;
 
     }
-    
 
     .left-part {
       background: url(../img/4.png) center/cover;
-      // border: 3px solid rgba(96, 227, 227, 0.719);
-      margin: 0 auto;
-      width: 100%;
+
+      @media screen and (max-width: 900px) {
+        min-height: 543px;;
+      }  
     }
     .right-part {
-      // border: 3px solid rgba(96, 227, 227, 0.719);
-      margin: 25px auto;
-      // margin-top: 2px;
-      width: 100%;
-      
+      padding: 15px;
+
+      @media screen and (max-width: 900px) {
+        margin-top: -35px;
+      }
       p {
-        margin: 0 auto;
-        padding: 30px;
+        display: grid;
         text-align: left;
         color: $color1;
         font-family: $font3;
-        // border: 3px solid rgba(96, 227, 227, 0.719);
         width: 100%;
+        margin: 25px auto;
+        padding: 25px;
+        align-items: center;
+        font-size: 1.3rem;
 
         @media screen and (max-width: 900px) {
           text-align: center;
+          
         }
       }
       video {
-        margin: 0 auto;
-        padding: 30px;
-        // border: 3px solid rgba(96, 227, 227, 0.719);
-        aspect-ratio: 16/9;
+        margin: 25px ;
         width: 100%;
-        height: 27vh;
+        margin: -38px auto;
+        padding: 55px 0;
+
+        @media screen and (max-width: 900px) {
+          
+        } 
       }
     }
   }
 }
 
   .section2 {
-    border: 3px solid rgba(96, 227, 227, 0.719);
     height: 7vh;
     display: grid;
     align-items: center;
     color: rgb(96, 227, 227);
     margin: 25px auto;
-  }
-
+    font-size: 2rem;
+  } 
   .section3 {
     color: $color1;
     background: rgba(65, 53, 134, 0.806);
+    border: 2px solid rgba(255, 0, 0, 0.61);
     margin: 25px auto;
-    border: 1px solid rgba(255, 0, 0, 0.61);
     width: 100%;
     padding: 25px;
+    font-size: 2rem;
+    display: grid;
 
+    p {
+      display: grid;
+      text-align: left;
+      font-size: 1.7rem;
+      justify-content: space-around
+    }
     video {
-      margin: 25px auto
+      margin: 25px auto;
     }
 
     @media screen and (max-width: 900px) {
-      
 
       video {
         width: 100%;
         margin: -38px auto;
         padding: 55px 0;
       }
-
     }
   }
 

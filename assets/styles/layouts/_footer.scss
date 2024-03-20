@@ -1,3 +1,13 @@
+h5 {
+  border: 1px solid rgba(255, 0, 0, 0.607);
+  height: 7vh;
+  display: grid;
+  align-items: center;
+  color: rgb(96, 227, 227);
+  margin: 25px auto;
+  width: 85%;
+  font-size: 2rem;
+}  
 footer {
   background: $grey2;
   min-height: 640px;
@@ -64,7 +74,7 @@ footer {
         grid-template-columns: 45% 55%;
       }
 
-      h3 {
+      h7 {
         font-family: $font1;
         letter-spacing: 2px;
         text-transform: uppercase;

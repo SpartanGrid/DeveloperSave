@@ -1,38 +1,112 @@
+h3 {
+  border: 1px solid rgba(255, 0, 0, 0.607);
+  height: 7vh;
+  display: grid;
+  align-items: center;
+  color: rgb(96, 227, 227);
+  margin: 25px auto;
+  width: 85%;
+  font-size: 2rem;
+}  
 section1 {
-  
+  width: 85%;
+  margin: 0 auto 30px;
+  display: grid;
+  // grid-template-columns: 100%;
   .box {
+    justify-content: center;
+    width: 100%;
     color: $color1;
-    border: 2px solid rgb(96, 227, 227);
+    border: 3px solid rgb(96, 227, 227);
     background: $black;
     padding: 45px; 
-    margin: 7.5%;
+    margin: 25px auto;
     font-size: 1.5rem;
-    transition: 0.25s ease;
+    display: grid;
+    grid-template-rows: 150px 150px 150px 75px 0 1fr;
+    gap: 18px;
   }
-  p span {
+  h4 {
+    display: grid;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 75px auto 0;
+  }
+  p {
     visibility: hidden;
     width: 240px;
     margin: 10px auto 0;
     color: $white;
+    border: 3px solid rgba(96, 227, 227, 0.719);
+    border-radius: 150px;
+    font-size: 1.6rem;
+    opacity: 0;
+    transform: translateX(-450px);
+    transition: 0.6s ease;
+    text-align: center;
   }
   button {
-    margin: 15px;
-    padding: 15px;
-    margin-top: 35px;
-    height: 7vh;
-    width: 10%;
-    font-size: 1.8rem;
+    min-width: 82px;
+    font-size: 2.4rem;
     text-align: center;
-    font-family: $font3;
+    font-family: $font2;
+    margin: 45px 40%;
+    transition: 0.5s ease;
+    
+  }
+  #btn-1 {
+    color: $color1;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    resize: none;
+  }
+  #btn-2 {
+    color: $color1;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    resize: none;
+  }
+  video {
+    width: 250px;
+    height: 250px;
+    grid-template-columns: 50% 50%;
+    visibility: hidden;
+    opacity: 0; 
+    text-align: center; 
+    margin: 10px auto 0;
+    transform: translateX(-450px);
+    transition: 0.6s ease;
+    @media screen and (max-width: 660px) {
+      max-height: 150px;
+      max-width: 150px;
+      
+    }
+  }
+  .show-response {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0); 
+  }
+  .show-response2 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.8s ease;
+  }
+  .show-response3 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.8s ease;
   }
   .question-clicked {
-    border: 2px dash rgb(214, 96, 227);
-    background:  rgba(214, 96, 227, 0.728);
-    border-radius: 150px;
-    color: $white;
-  
+    transition: 0.6s ease;
+    background:  rgba(65, 53, 134, 0.806);
+    border-radius: 300px;
+    border: 6px dashed rgba(197, 12, 185, 0.212);
+
     button {
-      border-radius: 150px;
+      border-radius: 30px;
     }
   }
 }

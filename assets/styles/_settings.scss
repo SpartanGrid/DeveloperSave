@@ -45,6 +45,14 @@ li {
 a,
 a:visited {
   color: $white;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 1000;
+  position: relative;
+}
+a:hover {
+  font-size: 1.3rem;
+  color: #2128bd;
 }
 
 body {
@@ -53,4 +61,46 @@ body {
   max-width: 2300px;
   margin: 0 auto;
   font-family: $font3;
+}
+.bubble {
+  position: absolute;
+  border-radius: 300px;
+  background: rgba(255, 166, 0, 0.6);
+  opacity: 0;
+  animation: anim 8s forwards;
+  filter: hue-rotate(0deg);
+}
+@keyframes anim {
+  to  {
+    top: -250px;
+    left: var(--left);
+    opacity: 1;
+    filter: hue-rotate(720deg);
+  }
+}
+html {
+  scroll-behavior: smooth;
 }    
+.mouse {
+  position: absolute;
+  border-radius: 1500px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+#cursor {
+  background: #2128bd;
+  width: 14px;
+  height: 14px;
+}
+#mouse1 {
+  height: 100px;
+  width: 100px;
+  background: white;
+  transition: 0.15s ease-out;
+}
+#mouse2 {
+  height: 200px;
+  width: 200px;
+  background: rgb(41, 41, 41);
+  transition: 0.25s ease-out;
+}

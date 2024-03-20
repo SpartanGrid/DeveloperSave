@@ -21,21 +21,25 @@
 <body>
 
   <header>
+    <span class="mouse" id="cursor"></span>
+    <span class="mouse" id="mouse1"></span>
+    <span class="mouse" id="mouse2"></span>
+
     <nav>
       <div class="logo">
-        <h3>SpartanGrid</h3>
+        <h1>SpartanGrid</h1>
       </div>  
       <ul class="nav-elements">
-        <LI>HTML</LI>
-        <LI>CSS</LI>
+        <LI><a href="#main">HTML</a></LI>
+        <LI><a href="#main">SCSS</a></LI>
         <LI>SCSS</LI>
-        <LI>JAVASCRIPT</LI>
-        <LI>REACT</LI>
+        <LI><a href="#JavaScript">JavaScript</a></LI>
+        <LI><a href="#Formulaire">Formulaire</a></LI>
       </ul>
       <div class="nav-icons">
-        <a href="https://discord.gg/KGAzbE7"><i class="fa-brands fa-discord"></i></a> 
-        <a href="https://youtube.com/@barbeblanche7777"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://github.com/SpartanGrid"><i class="fa-brands fa-github"></i></a>
+        <a href="https://discord.gg/KGAzbE7"target="_bank"><i class="fa-brands fa-discord"></i></a> 
+        <a href="https://youtube.com/@barbeblanche7777"target="_bank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://github.com/SpartanGrid"target="_bank"><i class="fa-brands fa-github"></i></a>
       </div> 
     </nav>
     <div class="header-text">
@@ -73,9 +77,7 @@
         <video src="./assets/videos/HTML ! .mp4" height="350" autoplay muted loop></video>
       </div>
     </section>
-    <div class="section2">
-      <H3>Navbar</H3>
-    </div>
+    <H3>Styles.scss</H3>
     <div class="section3">
       <p>Créer "New files" index.HTML <br>
           Mettre le "!" (point d'exclamation) <br>
@@ -93,22 +95,36 @@
     </div>
   </main>
 
-  <section1>
+  <h3>EventCLicked</h3>
+  <section1 id="JavaScript">
     <div class="click-event box">
       <h4>Est-ce que visual code studio est utilisé pour le codage?</h4> 
       <button id="btn-1">Oui</button> 
       <button id="btn-2">Non</button>
-      <p>La bonne réponse est Oui</p>
+      <p id="p1">La bonne réponse est Oui</p>
+      <video id="video-1" src="../assets/videos/non.mp4" height="350" autoplay muted loop> </video>
+      <video id="video-2" src="./assets/videos/oui.mp4" height="350" autoplay muted loop></video>
     </div>
   </section1>
 
+  <h3>KeyPressAuto</h3>
+  <section2>
+    <div class="script-auto box2">
+      <h6>Je suis un</h6>
+      <h6 id="target"></h6>
+    </div>
+  </section2>
+  <H3>FullBubles</H3>
+  <section3>
+    <div class="target-full box3">
+      <h9>0</h9>
+    </div>
+  </section3>
 
 
 
-
-
-
-  <footer>
+  <h5>Formulaire</h5>
+  <footer id="Formulaire">
     <form action="">
       <label for="name">name</label>
       <input type="text" id="name" autocomplete="off">
@@ -121,19 +137,19 @@
       </div>
     </form>
     <div class="infos-contact">
-        <h3>address</h3>
+        <h7>address</h7>
         <p><br>1234 Somewhere Road #87257<br>Nashville, TN 00000-0000</p>
       </div>
       <div>
-        <h3>phone</h3>
+        <h7>phone</h7>
         <p>(000) 000-0000</p>
       </div>
       <div>
-        <h3>email</h3>
+        <h7>email</h7>
         <p>info@untitled.ltd</p>
       </div>
       <div class="social">
-        <h3>social</h3>
+        <h7>social</h7>
         <ul>
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-facebook-f"></i></li>
